@@ -16,12 +16,12 @@ const Navbar = () => {
   }, []);
 
   const navLinks = [
-    { href: '#home', label: 'Home' },
-    { href: '#about', label: 'About' },
+    { href: '#home', label: 'Inicio' },
+    { href: '#about', label: 'Sobre' },
     { href: '#portfolio', label: 'Portfolio' },
-    { href: '#services', label: 'Services' },
-    { href: '#testimonials', label: 'Testimonials' },
-    { href: '#contact', label: 'Contact' },
+    { href: '#services', label: 'serviços' },
+    { href: '#testimonials', label: 'Depoimentos' },
+    { href: '#contact', label: 'Contatos' },
   ];
 
   return (
