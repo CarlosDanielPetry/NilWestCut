@@ -1,0 +1,51 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    @apply scroll-smooth;
+  }
+  
+  body {
+    @apply bg-black text-white font-montserrat;
+  }
+}
+
+@layer components {
+  .nav-link {
+    @apply text-gray-300 hover:text-gold transition-colors duration-300 text-sm uppercase tracking-wider;
+  }
+  
+  .section-title {
+    @apply font-playfair text-4xl md:text-5xl font-bold mb-8 text-center;
+  }
+  
+  .btn-primary {
+    @apply px-6 py-3 bg-gold text-black font-semibold rounded hover:bg-gold/90 transition-colors duration-300;
+  }
+}
+
+.text-stroke {
+  -webkit-text-stroke: 1px theme('colors.gold');
+  color: transparent;
+  text-shadow: 
+    0 0 5px rgba(212, 175, 55, 0.3),
+    0 0 10px rgba(212, 175, 55, 0.2);
+  animation: neon 2s ease-in-out infinite alternate;
+}
+
+@keyframes neon {
+  from {
+    text-shadow: 
+      0 0 5px rgba(212, 175, 55, 0.3),
+      0 0 10px rgba(212, 175, 55, 0.2);
+  }
+  to {
+    text-shadow: 
+      0 0 3px rgba(212, 175, 55, 0.2),
+      0 0 7px rgba(212, 175, 55, 0.1);
+  }
+}
